@@ -10,12 +10,12 @@ int main()
 
     factorial[1] = factorial[0] = 1;
 
-    for (int i = 2; i < size; i++)
+    for (int i = 2; i < factorial.size(); i++)
     {
         factorial[i] = i * factorial[i - 1];
     }    
 
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < factorial.size(); i++)
     {
         printf("%d! = %Lf\n", i, factorial[i]);
     }
