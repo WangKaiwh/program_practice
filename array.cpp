@@ -24,7 +24,7 @@ int main()
         std::cin.getline(temp, sizeof(temp));
         
         don[i] = strtof(temp, NULL);
-        printf("[debug]: strtof - %lf\n", don[i]);
+        printf("[debug]: strtof  %lf\n", don[i]);
 
         if (iszero(don[i])) // if iszero, you input not digital.
         {
