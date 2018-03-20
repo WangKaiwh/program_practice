@@ -21,10 +21,6 @@ int main()
         exit(1);
     }
 
-    inFile.get(ch);
-    printf("%c", ch);
-    cnt++;
-
     while (inFile.good())
     {
         inFile.get(ch);
