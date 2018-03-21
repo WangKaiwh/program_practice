@@ -11,7 +11,7 @@ bool cal_tiaohepingjunshu(double x, double y, double &result)
     }
     else
     {
-        printf("x + y = 0, x = %f, y = %f\n", x, y);
+        printf("[error]: x + y = 0, x = %f, y = %f\n", x, y);
         return false;
     }
 }
@@ -20,11 +20,12 @@ int main()
 {
     double x, y;
 
-    printf("Please input tow digital (0 to quit)!\n");
     while (1)
     {
         double result = 0;
 
+        printf("Please input tow digital (0 to quit)!\n");
+     
         std::cin >> x >> y;
         if (std::cin.good())
         {
@@ -40,7 +41,8 @@ int main()
         else
         {
             printf("input error, try again!\n");
-            std::cin.clear(); // ### BUG
+            std::cin.clear(); 
+            std::cin.get(); // bug fix
         }
     }
 
