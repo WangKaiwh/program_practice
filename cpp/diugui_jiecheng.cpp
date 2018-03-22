@@ -17,7 +17,7 @@ int main()
 
     while (std::cin >> i) // if error, return false
     {
-        printf("%d jiecheng:%d\n", i, jiecheng(i));
+        printf("%d! = %d\n", i, jiecheng(i));
     }
 
     return 0;
