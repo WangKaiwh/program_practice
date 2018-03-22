@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdio>
 
 inline int jiecheng(int v)
 {
